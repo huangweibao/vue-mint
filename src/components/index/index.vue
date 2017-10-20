@@ -1,6 +1,10 @@
 <template>
 <div>
-  <xy-header></xy-header>
+  <xy-header
+    v-bind:title="title"
+    v-bind:isShow="isShow"
+    v-bind:isFlash="isFlash"
+    ></xy-header>
   <div class="container">
     <div class="statisticsContainer" >
       <h3>统计</h3>
@@ -70,7 +74,10 @@ export default {
   name: 'index',
   data () {
     return {
-      msg: 'index page'
+      msg: 'index page',
+      title: '首页',
+      isShow: false,
+      isFlash: false
     }
   },
   components: {

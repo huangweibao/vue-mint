@@ -21,7 +21,7 @@
     <p>委托单</p>
   </div>
   <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-    <router-link to="/index/MyMine">
+    <router-link to="/MyMine">
       <!--<span class="glyphicon glyphicon-user"></span>&nbsp;我的-->
       <img v-if="!isMyMe" src="../../assets/img/index/footer-3.png">
       <img v-if="isMyMe" src="../../assets/img/index/footer-3-select.png">
